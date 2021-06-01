@@ -18,3 +18,19 @@
 main {
     background-color: black;
 }
+
+.earth {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    background-image: url('../img/earthTPGCode.jpg');
+    border-radius: 51%;
+    background-size: cover;
+    box-shadow: 0px 0px 50px 25px #000000;
+    animation: spin 50s linear alternate infinite;
+    border: 1px solid rgba(39,45,66,.7)
+}
+@keyframes spin {
+    100%{background-position: 100%;}
+}
+

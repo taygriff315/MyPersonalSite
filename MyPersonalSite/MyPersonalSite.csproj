@@ -141,11 +141,14 @@
     <Content Include="Content\assets\img\clients\client-4.png" />
     <Content Include="Content\assets\img\clients\client-5.png" />
     <Content Include="Content\assets\img\clients\client-6.png" />
+    <Content Include="Content\assets\img\DungeonAppCoverPhoto.jpg" />
+    <Content Include="Content\assets\img\earthTPGCode.jpg" />
     <Content Include="Content\assets\img\favicon.png" />
     <Content Include="Content\assets\img\featured-1.png" />
     <Content Include="Content\assets\img\featured-2.png" />
     <Content Include="Content\assets\img\featured-3.png" />
     <Content Include="Content\assets\img\featured-4.png" />
+    <Content Include="Content\assets\img\Fed1CoverPhoto.jpg" />
     <Content Include="Content\assets\img\footer-bg.jpg" />
     <Content Include="Content\assets\img\headshot.jpg" />
     <Content Include="Content\assets\img\hero-bg.png" />
@@ -164,6 +167,7 @@
     <Content Include="Content\assets\img\portfolio\portfolio-8.jpg" />
     <Content Include="Content\assets\img\portfolio\portfolio-9.jpg" />
     <Content Include="Content\assets\img\services.jpg" />
+    <Content Include="Content\assets\img\StoreFrontCoverPhoto.jpg" />
     <Content Include="Content\assets\img\team\brandon.jpg" />
     <Content Include="Content\assets\img\team\carter.jpg" />
     <Content Include="Content\assets\img\team\edward.jpg" />
