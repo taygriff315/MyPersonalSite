@@ -1,0 +1,20 @@
+﻿body {
+    background: rgb(14,22,32);
+}
+
+#header {
+    background: rgb(14,22,32);
+}
+
+.navbar a {
+    color: white;
+}
+
+
+.section-title h2, .section-title h3 {
+    color: white;
+}
+
+main {
+    background-color: black;
+}
