@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #7cc576;
+  color: #7cc576 !important;
 }
 
 .navbar .dropdown ul {
