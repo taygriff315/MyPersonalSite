@@ -27,9 +27,30 @@ main {
     border-radius: 51%;
     background-size: cover;
     box-shadow: 0px 0px 50px 25px #000000;
-    animation: spin 50s linear alternate-reverse infinite;
+    animation: spin 45s linear alternate infinite;
     border: 1px solid rgba(39,45,66,.7)
 }
 @keyframes spin {
     100%{background-position: 100%;}
+}
+
+.earth-navbar {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    background-image: url('../img/earthTPGCode.jpg');
+    border-radius: 51%;
+    background-size: cover;
+    box-shadow: 0px 0px 50px 25px #000000;
+    animation: spin 45s linear alternate infinite;
+    border: .2px solid rgba(39,45,66,.7)
+}
+@keyframes spin {
+    100% {
+        background-position: 100%;
+    }
+}
+
+span.field-validation-error {
+    display: block !important;
 }

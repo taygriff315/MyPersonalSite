@@ -1,6 +1,7 @@
 ﻿using MyPersonalSite.Models;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
@@ -44,22 +45,27 @@ namespace MyPersonalSite.Controllers
         public ActionResult Contact(ContactViewModel cvm)
         {
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return View(cvm);
             }
 
             string message = $"You have recieved an email from {cvm.Name}. Subject: {cvm.Subject}. Respond to {cvm.EmailAddress}. Message: {cvm.Message}";
 
-            MailMessage mm = new MailMessage("admin@tpgcode.com", "titleist315@gmail.com", cvm.Subject, cvm.Message);
+            MailMessage mm = new MailMessage(
+                ConfigurationManager.AppSettings["EmailUser"].ToString(),
+                ConfigurationManager.AppSettings["EmailTo"].ToString(),
+                cvm.Subject,
+                message
+                );
 
             mm.IsBodyHtml = true;
-
+            mm.Priority = MailPriority.High;
             mm.ReplyToList.Add(cvm.EmailAddress);
 
-            SmtpClient client = new SmtpClient("mail.tpgcode.com");
+            SmtpClient client = new SmtpClient(ConfigurationManager.AppSettings["EmailClient"].ToString());
 
-            client.Credentials = new NetworkCredential("admin@tpgcode.com", "P@ssw0rd");
+            client.Credentials = new NetworkCredential(ConfigurationManager.AppSettings["EmailUser"].ToString(), ConfigurationManager.AppSettings["EmailPass"].ToString());
 
             try
             {
@@ -79,3 +85,5 @@ namespace MyPersonalSite.Controllers
         
     }
 }
+
+
