@@ -19,25 +19,28 @@ namespace MyPersonalSite.Controllers
 
         public ActionResult Resume()
         {
-            
 
+            ViewBag.testValue = "scroll";
             return View();
         }
 
         public ActionResult Projects()
         {
+            ViewBag.testValue = "scroll";
             return View();
         }
 
         public ActionResult Team()
         {
+
+            ViewBag.testValue = "scroll";
             return View();
         }
 
         public ActionResult Contact()
         {
-            
 
+            ViewBag.testValue = "scroll";
             return View();
         }
 
@@ -78,7 +81,7 @@ namespace MyPersonalSite.Controllers
 
                 return View(cvm);
             }
-
+            ViewBag.testValue = "scroll";
             return View("EmailConfirmation", cvm);
 
         }

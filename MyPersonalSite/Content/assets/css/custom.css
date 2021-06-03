@@ -54,3 +54,12 @@ main {
 span.field-validation-error {
     display: block !important;
 }
+
+/*div.form-group.justify-content-center {
+    margin-bottom: 5%;
+}*/
+
+label.control-label {
+    margin-top: 2%;
+    margin-bottom: 2%;
+} 

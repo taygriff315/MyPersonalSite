@@ -40,7 +40,7 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero">
         <div class="hero-container">
-            <a href="@Url.Action("Contact","Home")" class="hero-logo" data-aos="zoom-in">
+            <a href="#earth-scroll" class="hero-logo" data-aos="zoom-in">
                 <div class="earth">  </div>
             </a>
             <div>
@@ -57,7 +57,7 @@
         <div class="container d-flex align-items-center justify-content-between">
 
             <div class="earth-navbar">
-               
+
             </div>
 
             <nav id="navbar" class="navbar">
@@ -154,6 +154,18 @@
     <script>
 
         $(function () { $('.nav-list > li a').each(function () { if ($(this).attr('href') == window.location.pathname) { $(this).addClass('active'); } }); });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+        @if (ViewBag.testValue == "scroll")
+        {
+            <text>$('html,body').animate({
+                scrollTop: ($("#scroll").offset().top) - 200
+                }, 'slow');</text>
+        }
+        });
+
     </script>
 
     <script src="https://kit.fontawesome.com/5340a0b345.js" crossorigin="anonymous"></script>
